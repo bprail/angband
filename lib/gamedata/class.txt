@@ -110,11 +110,12 @@ skill-dig:0:0
 info:9:0
 attack:6:30:5
 equip:food:Ration of Food:1:3
-equip:light:Wooden Torch:1:3
+equip:light:Phial:1:1
 equip:potion:Berserk Strength:1:1
-equip:sword:Dagger:1:1
+equip:sword:Long Sword:1:1
 equip:soft armour:Soft Leather Armour:1:1
 equip:scroll:Word of Recall:1:1
+equip:scroll:Identify:10:20
 flags:BRAVERY_30 | NO_MANA
 title:Rookie
 title:Soldier
@@ -127,6 +128,39 @@ title:Champion
 title:Hero
 title:Lord
 
+############### Duelist ###############
+name:Duelist
+stats:2:-2:-2:3:2
+skill-disarm-phys:25:15
+skill-disarm-magic:20:10
+skill-device:18:7
+skill-save:18:10
+skill-stealth:10:5
+skill-search:10:12
+skill-melee:70:45
+skill-shoot:45:45
+skill-throw:35:25
+skill-dig:0:0
+info:9:0
+attack:8:30:5
+equip:food:Ration of Food:1:3
+equip:light:Phial:1:1
+equip:potion:Speed:1:1
+equip:sword:Long Sword:1:1
+equip:soft armour:Soft Leather Armour:1:1
+equip:scroll:Word of Recall:1:1
+equip:scroll:Identify:10:20
+flags:PANACHE | NO_MANA
+title:Rookie
+title:Soldier
+title:Swordsman
+title:Swashbuckler
+title:Veteran
+title:Myrmidon
+title:Commando
+title:Champion
+title:Hero
+title:Lord
 
 ############### MAGE ###############
 name:Mage
