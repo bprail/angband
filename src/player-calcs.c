@@ -2063,6 +2063,23 @@ void calc_bonuses(struct player *p, struct player_state *state, bool known_only,
 	/* Call individual functions for other state fields */
 	calc_torch(p, state, update);
 	calc_mana(p, state, update);
+    
+    if (player_has(p, PF_PANACHE))
+    {
+        bool apply_panache = true;
+        for (int i = 0; i < p->body.count && apply_panache; i++)
+        {
+            struct object *obj_local = slot_object(p, i);
+            if (obj_local == NULL) continue;
+            if (obj_local->to_h < 0) apply_panache = false;
+        }
+        
+        if (apply_panache)
+        {
+            state->num_blows += 100;
+            state->speed += 5;
+        }
+    }
 
 	return;
 }
